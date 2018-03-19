@@ -66,9 +66,20 @@ function getPossessiveNameForm(name) {
 // ------------------------------------------------------------
 // LOAD OR REFRESH MISTRESS STATUS
 // ------------------------------------------------------------
-function createMistressCard(id) {
+function renderMistressCard(id) {
   let mistress = getCharacterReferenceById(id);
   if(mistress === null) return;
+
+  let foundMeter = $( "#meter-" + id + "-wrapper" );
+  let foundCard = $( "#mistress-" + id + "-card" );
+
+  if ( foundMeter.length ) {
+    foundMeter.remove();
+  }
+
+  if ( foundCard.length ) {
+    foundCard.remove();
+  }
 
   instantiateTemplate("#mistress-card", "#mistress-card-wrapper");
   let $cloneImg = $("#mistress-card-clone > .card-img-top");
@@ -78,6 +89,8 @@ function createMistressCard(id) {
   let newCardId = "mistress-" + mistress.id + "-card";
   let $clone = $("#mistress-card-clone");
   $clone.attr("id", newCardId);
+
+  $("#meter-wrapper-clone").attr("id", "meter-" + mistress.id + "-wrapper");
 
   let eventPayload = {
     selector: "#" + newCardId,
@@ -152,7 +165,17 @@ function registerMistressMeters() {
 }
 
 function addMetersToCard(cardPayload) {
-  console.log(cardPayload);
+  cardPayload.mistress.meters.forEach(function (meter){
+    instantiateTemplate("#mistress-meter", "#meter-" + cardPayload.mistress.id + "-wrapper > .list-group");
+
+    $("#mistress-meter-clone > .text-center").text(meter.name);
+    $("#mistress-meter-clone > .progress > .progress-bar").attr("style", "width: " + meter.value  + "%");
+    $("#mistress-meter-clone > .progress > .progress-bar").attr("aria-valuenow", meter.value);
+    
+    let newCardId = "mistress-" + meter.name + "-meter";
+    let $clone = $("#mistress-meter-clone");
+    $clone.attr("id", newCardId);
+  });
 }
 
 // ------------------------------------------------------------

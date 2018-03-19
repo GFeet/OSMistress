@@ -13,3 +13,13 @@ To download the application, either clone the repository or download the content
 There is currently no way to obtain the image resources and other material for the application to run properly.
 
 **This will be added soon...**
+
+## Modding Guide
+
+**Coming soon...**
+
+## Submitting your mod
+
+* To submit your mod, you need to create a pull request with your mod's .js file in the proper directory.
+
+**This system is still in development and will most likely change...**
