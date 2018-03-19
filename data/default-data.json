@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "title": "Office Shoes",
+            "imageURL": "./img/black-heels.png",
+            "description": "Alice's black high heels she wears in the office. She both arrives and leaves wearing them.",
+            "ownerId": 0
+        }
+    ],
+    "characters": [
+        {
+            "id": 0,
+            "name": "Alice",
+            "avatarURL": "./img/alice_avatar.jpg",
+            "meters": [
+                {
+                    "name": "My First Meter",
+                    "value": 55
+                }
+            ]
+        }
+    ]
+}

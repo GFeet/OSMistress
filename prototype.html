@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#732d9e">
+    <title>OSMistress</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#b453c4">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/prototype.css" type="text/css">
+  </head>
+  <body>
+    <template id="my-template">
+      <div id="my-template-clone" class="card" style="width: 18rem; margin: 5px;">
+        <img class="card-img-top item-icon" src="" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item status">...</li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div>
+    </template>
+    <template id="mistress-card">
+      <div id="mistress-card-clone" class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/alice_avatar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Mistress Alice</div>
+        <div class="card-body">
+          <p class="card-text">These are your mistress' requirements. As a foot-slave, it is your duty to keep these at max value.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+        </ul>
+      </div>
+    </template>
+    <template id="mistress-meter">
+      <li id="mistress-meter-clone" class="list-group-item bg-danger">
+        <p class="text-center">Footwear cleanliness</p>
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+    </template>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-4">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Mistress Alice
+                <span class="badge badge-primary badge-pill">14</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="row mistress-row" id="mistress-card-wrapper">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="img/alice_avatar.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Mistress Alice</div>
+          <div class="card-body">
+            <p class="card-text">These are your mistress' requirements. As a foot-slave, it is your duty to keep these at max value.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-danger">
+                <p class="text-center">Footwear cleanliness</p>
+                <div class="progress" style="height: 30px;">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="list-group-item bg-warning">
+                <p class="text-center">Feet cleanliness</p>
+                <div class="progress" style="height: 30px;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center" id="my-container">
+      </div>
+    </div>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/prototype.js"></script>
+  </body>
+</html>
