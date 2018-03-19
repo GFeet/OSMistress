@@ -18,7 +18,7 @@
   <body>
     <template id="my-template">
       <div id="my-template-clone" class="card" style="width: 18rem; margin: 5px;">
-        <img class="card-img-top item-icon" src="" alt="">
+        <img class="card-img-top item-icon" src="" alt="" onerror="imageError(this);">
         <div class="card-body">
           <h5 class="card-title"></h5>
           <p class="card-text"></p>
@@ -33,7 +33,7 @@
     </template>
     <template id="mistress-card">
       <div id="mistress-card-clone" class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/alice_avatar.jpg" alt="Card image cap">
+        <img class="card-img-top" src="img/alice_avatar.jpgX" alt="Card image cap" onerror="imageError(this);">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
@@ -68,7 +68,7 @@
       </div>
       <div class="row mistress-row" id="mistress-card-wrapper">
         <!-- <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="img/alice_avatar.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/alice_avatar.jpgX" alt="Card image cap" onerror="imageError(this);">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>

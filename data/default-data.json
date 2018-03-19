@@ -3,7 +3,7 @@
         {
             "id": 0,
             "title": "Office Shoes",
-            "imageURL": "./img/black-heels.png",
+            "imageURL": "./img/black-heels.pngX",
             "description": "Alice's black high heels she wears in the office. She both arrives and leaves wearing them.",
             "ownerId": 0
         }
@@ -12,7 +12,7 @@
         {
             "id": 0,
             "name": "Alice",
-            "avatarURL": "./img/alice_avatar.jpg",
+            "avatarURL": "./img/alice_avatar.jpgX",
             "meters": [
                 {
                     "name": "My First Meter",
