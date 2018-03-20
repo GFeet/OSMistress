@@ -16,7 +16,8 @@
             "meters": [
                 {
                     "name": "My First Meter",
-                    "value": 55
+                    "value": 100,
+                    "useColors": true
                 }
             ]
         }

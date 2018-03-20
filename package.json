@@ -1,0 +1,22 @@
+{
+  "name": "osmistress",
+  "version": "1.0.0",
+  "description": "Local JavaScript NSFW moddable application.",
+  "main": "js/prototype.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GFeet/OSMistress.git"
+  },
+  "author": "GFeet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GFeet/OSMistress/issues"
+  },
+  "homepage": "https://github.com/GFeet/OSMistress#readme",
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
